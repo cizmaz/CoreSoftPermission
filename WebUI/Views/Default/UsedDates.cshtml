@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Kullanılan İzin Tarihleri";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Area Chart -->
+<div class="col-xl-12 col-lg-7">
+    <div class="card shadow mb-4">
+        <!-- Card Header - Dropdown -->
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+
+        </div>
+        <!-- Card Body -->
+        <div class="card-body">
+            <div class="chart-area">
+                <label for="UsedDatesNumberPermission">Seçiniz:</label>
+                <select class="form-select" aria-label="SelectDate">
+                    <option selected>Detayını görmek istediğiniz izin tarihini seçiniz.</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <div class="mb-3">
+                    <label for="UsedDatesTextArea" class="form-label">İzin sebebi</label>
+                    <textarea class="form-control" id="UsedDatesTextArea" rows="3"></textarea>
+                </div>
+            </div>
+    </div>
+</div>

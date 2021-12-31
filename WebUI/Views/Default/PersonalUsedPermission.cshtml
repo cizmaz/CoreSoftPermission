@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "Çalışanların kullandıkları izinler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Area Chart -->
+<div class="col-xl-12 col-lg-7">
+    <div class="card shadow mb-4">
+        <!-- Card Header - Dropdown -->
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+
+        </div>
+        <!-- Card Body -->
+        <div class="card-body" style="height: 28rem;">
+            <div class="chart-area">
+
+                
+                <select class="form-select" aria-label="DateSelect">
+                    <option selected>Personel Seçiniz.</option>
+                    <option value="1">Aykut Önal</option>
+                    <option value="2">İslam Akgüç</option>
+                    <option value="3">Esra Kahya</option>
+                </select>
+                <br />
+                <br />
+                <br />
+
+                  <select class="form-select" aria-label="DateSelect">
+                    <option selected>Tarih Seçiniz.</option>
+                    <option value="1">01.01.2022</option>
+                    <option value="2">14.01.2022</option>
+                    <option value="3">30.01.2022</option>
+                </select>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+
+                  <hr size = "10"
+                <div class="mb-3">
+                    <label for="PersonalTextArea" class="form-label">Açıklama</label>
+                    <textarea class="form-control" id="PersonalTextArea" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

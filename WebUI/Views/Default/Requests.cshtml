@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "İzin Talepleri";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Area Chart -->
+<div class="col-xl-12 col-lg-7">
+    <div class="card shadow mb-4">
+        <!-- Card Header - Dropdown -->
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+
+        </div>
+        <!-- Card Body -->
+        <div class="card-body">
+            <div class="chart-area">
+                <form action="/action_page.php row">
+                    <label for="PermissionConfirm">Gelen İstek</label>
+                    <input class="form-control" type="text" aria-label="Talep">
+                    <br />
+                    <label for="RequestTextArea">Açıklama:</label>
+                    <input class="form-control form-control-lg" type="text" aria-label=".form-control-sm example">
+                    <br />
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-success" type="button">Onay</button>&nbsp;
+                        <button class="btn btn-danger" type="button">Red</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>

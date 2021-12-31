@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "İzin Talebi Oluştur";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Area Chart -->
+<div class="col-xl-12 col-lg-7">
+    <div class="card shadow mb-4">
+        <!-- Card Header - Dropdown -->
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+
+        </div>
+        <!-- Card Body -->
+        <div class="card-body">
+            <div class="chart-area">
+                <form action="/action_page.php">
+                    <label for="StartDate">İzin Başlangıç Tarihi:</label>
+                    <input type="date" id="startdate" name="startdate">
+
+                </form>
+                <hr size = "10"
+
+                <form action="/action_page.php">
+                    <label for="EndDate">İzin Bitiş Tarihi:</label>
+                    <input type="date" id="enddate" name="enddate">
+
+                    <hr size = "10"
+                    <br />
+
+
+                    <div class="mb-3">
+                        <label for="CreateReqTextArea" class="form-label">İzin Sebebi</label>
+                        <textarea class="form-control" type="text" rows="3" aria-label="İzin sebebi"></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-dark me-md-2" type="button">Talep Oluştur</button>
+
+                    </div>
+                    </form>
+</div>
+        </div>
+    </div>
+</div>
