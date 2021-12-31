@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace EntityLayer.deneme
 {
     internal class deneme
-    {
+    {// deneme
     }
 }
