@@ -20,5 +20,7 @@ namespace DataLayer.Concrete
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<PermissionInfo> PermissionInfos { get; set; }
         public DbSet<CompanyPermissionDate> CompanyPermissionDates { get; set; }
+
+
     }
 }
