@@ -1,4 +1,5 @@
-﻿using EntityLayer.EntityFolder;
+﻿using DataLayer.Configurations;
+using EntityLayer.EntityFolder;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,18 @@ namespace DataLayer.Concrete
         public DbSet<PermissionInfo> PermissionInfos { get; set; }
         public DbSet<CompanyPermissionDate> CompanyPermissionDates { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new UserRoleConfiguration());
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new RoleConfiguration());
+            modelBuilder.ApplyConfiguration(new PermissionInfoConfiguration());
+            modelBuilder.ApplyConfiguration(new PermissionConfiguration());
+            modelBuilder.ApplyConfiguration(new CompanyPermissionDateConfiguration());
 
+
+           
+
+        }
     }
 }
