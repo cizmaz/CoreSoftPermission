@@ -22,7 +22,8 @@ namespace DataLayer.Seeds
         {
             builder.HasData(
 
-               new User { }
+               new User { ID = 1, NameSurname = "Aykut Önal", Username = "aykutonal", Email="aykutonal@.com", Password = "coresoft" },
+               new User { ID = 2, NameSurname = "İslam Akgüç", Username = "islamakguc", Email = "islamakguc@.com", Password = "coresoft" }
 
                );
         }

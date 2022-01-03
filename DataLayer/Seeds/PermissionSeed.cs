@@ -22,7 +22,8 @@ namespace DataLayer.Seeds
         public void Configure(EntityTypeBuilder<Permission> builder)
         {
             builder.HasData(
-                new Permission { }
+                new Permission { ID = 1, UserID = 1, Reason = "izin", Status = 12, Location ="İstanbul" },
+                new Permission { ID = 2, UserID = 2, Reason = "izin", Status = 14, Location = "Bursa" }
 
 
             );

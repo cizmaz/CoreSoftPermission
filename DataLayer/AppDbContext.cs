@@ -1,4 +1,5 @@
 ﻿using DataLayer.Configurations;
+using DataLayer.Seeds;
 using EntityLayer.EntityFolder;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Concrete
 {
-    public class Context : DbContext
+    public class AppDbContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -31,8 +32,14 @@ namespace DataLayer.Concrete
             modelBuilder.ApplyConfiguration(new PermissionConfiguration());
             modelBuilder.ApplyConfiguration(new CompanyPermissionDateConfiguration());
 
+            modelBuilder.ApplyConfiguration(new UserSeed(new int[] { 1, 2, 3, 4, 5, 6 }));
+            modelBuilder.ApplyConfiguration(new RoleSeed(new int[] { 1, 2, 3, 4, 5, 6 }));
+            modelBuilder.ApplyConfiguration(new PermissionSeed(new int[] { 1, 2, 3, 4, 5, 6 }));
+            modelBuilder.ApplyConfiguration(new PermissionInfoSeed(new int[] { 1, 2, 3, 4, 5, 6 }));
+            modelBuilder.ApplyConfiguration(new UserRoleSeed(new int[] { 1, 2, 3, 4, 5, 6 }));
+            modelBuilder.ApplyConfiguration(new CompanyPermissionDateSeed(new int[] { 1, 2, 3, 4, 5, 6 }));
 
-           
+
 
         }
     }

@@ -23,7 +23,7 @@ namespace DataLayer.Seeds
         {
             builder.HasData(
 
-                new PermissionInfo { }
+                new PermissionInfo { ID = 1, UserID = 1, CompanyPermissionDateID = 1, UsedPermissionDay = 20, TransferredPermissionDay = 20  }
                
                 );
         }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.UnitOfWork
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork
     {
         IUserRepository Users { get; }
         IUserRoleRepository UserRoles { get; }

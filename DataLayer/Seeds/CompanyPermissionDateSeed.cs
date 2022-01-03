@@ -22,8 +22,9 @@ namespace DataLayer.Seeds
         public void Configure(EntityTypeBuilder<CompanyPermissionDate> builder)
         {
             builder.HasData(
-                
-                new CompanyPermissionDate { }
+
+                new CompanyPermissionDate { ID = 1, Name = "Aykut Önal", PermissionTime = 14 },
+                new CompanyPermissionDate { ID = 2, Name = "İslam Akgüç", PermissionTime = 12 }
                 );
         }
     }

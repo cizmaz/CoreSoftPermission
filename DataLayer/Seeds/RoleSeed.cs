@@ -24,8 +24,9 @@ namespace DataLayer.Seeds
         {
             builder.HasData(
                 
-                new Role { }
-                
+                new Role { ID = 1, Name = "admin" },
+                 new Role { ID = 2, Name = "personal" }
+
                 );
         }
     }

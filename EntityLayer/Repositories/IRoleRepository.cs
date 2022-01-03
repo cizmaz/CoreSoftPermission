@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Repositories
 {
-    interface IRoleRepository
+    public interface IRoleRepository
     {
         Task<Role> GetWithUserRolesByIdAsync(int roleID);
     }

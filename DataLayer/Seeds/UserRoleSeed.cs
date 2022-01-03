@@ -23,7 +23,7 @@ namespace DataLayer.Seeds
         {
             builder.HasData(
                 
-                new UserRole { }
+                new UserRole {ID = 1, UserID = 1, RoleID = 1 }
                 );
         }
     }

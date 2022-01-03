@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Repositories
 {
-    interface IPermissionRepository: IRepository<Permission>
+    public interface IPermissionRepository: IRepository<Permission>
     {
-        Task<Permission> GetWithUserRolesByIdAsync(int permissionID);
+        Task<Permission> GetWithUsersByIdAsync(int permissionID);
     }
 }

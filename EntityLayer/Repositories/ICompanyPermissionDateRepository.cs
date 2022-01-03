@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Repositories
 {
-    interface ICompanyPermissionDateRepository
+    public interface ICompanyPermissionDateRepository
     {
         Task<CompanyPermissionDate> GetWithPermissionInfosByIdAsync(int companyPermissionDateID);
     }
